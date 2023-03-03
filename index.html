@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Копицентр Вектор</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=33c8a1cf-dff0-4e94-9215-040a34625956&lang=ru_RU" type="text/javascript"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/setMode.js"></script>
 
 
 </head>
 
 <body>
-
     <main class="main">
         <section class="main-section section">
             <header class="header">
@@ -33,12 +33,12 @@
                             </li>
                             <li class="header-item about-us">
                                 <a href="#" class="header-link a-reset">
-                                    О нас
+                                    Преимущества
                                 </a>
                             </li>
                             <li class="header-item blog">
                                 <a href="#" class="header-link a-reset">
-                                    Блог
+                                    Цены
                                 </a>
                             </li>
                             <li class="header-item header__contacts btn-1">
@@ -49,7 +49,14 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="tumbler" id="dark-mode-tumbler">
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </header>
+
             <div class="main-container container">
                 <h1 class="main-title">
                     Копицентр <span class="bracket">{</span>Вектор<span class="bracket">}</span>&nbsp;&mdash; для тех,
@@ -144,7 +151,7 @@
                         Удобная оплата
                     </h3>
                     <p class="card_descr">
-                        Платите любым удобным для вас способом. Мы заранее обо всем позаботились
+                        Платите любым удобным для Вас способом. Мы заранее обо всем позаботились
                     </p>
                 </li>
             </ul>
@@ -186,6 +193,12 @@
                         <tr><td>Переупаковка и добавление страниц</td> <td>100</td></tr>
                         <tr><td>Запись на электронный носитель</td>  <td>150</td></tr>
                     </table>
+                    <p class="price__conditions">
+                        *За сложные и срочные работы надбавка оговаривается дополнительно, до 50% к общей сумме работ
+                    </p>
+                    <p class="price__conditions">
+                        *На работы, не вошедшие в прейскурант, цена договорная
+                    </p>
                 </div>
             </div>
         </section>
@@ -249,7 +262,7 @@
             </div>
         </section>
     </main>
-
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
