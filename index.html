@@ -6,14 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Копицентр Вектор</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=33c8a1cf-dff0-4e94-9215-040a34625956&lang=ru_RU" type="text/javascript"></script>
-    <script src="/js/map.js"></script>
-    <script src="/js/setMode.js"></script>
+    <title>Вектор - центр оперативной печати</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css">
+
+    <script src="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.js" defer></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=33c8a1cf-dff0-4e94-9215-040a34625956&lang=ru_RU"
+        type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script src="js/setMode.js"></script>
 
 
 </head>
-
+<!-- #fff -->
 <body>
     <main class="main">
         <section class="main-section section">
@@ -25,54 +37,70 @@
                         </a>
                     </div>
                     <nav class="header-nav">
-                        <ul class="header-list flex ul-reset">
-                            <li class="header-item services">
-                                <a href="#services" class="header-link a-reset">
-                                    Услуги
-                                </a>
-                            </li>
-                            <li class="header-item about-us">
-                                <a href="#" class="header-link a-reset">
-                                    Преимущества
-                                </a>
-                            </li>
-                            <li class="header-item blog">
-                                <a href="#" class="header-link a-reset">
-                                    Цены
-                                </a>
-                            </li>
-                            <li class="header-item header__contacts btn-1">
-                                <a href="#" class="header-link a-reset">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="nav__menu">
+                            <ul class="header-list flex ul-reset">
+                                <li class="header-item services">
+                                    <a href="#services" class="header-link a-reset">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="header-item about-us">
+                                    <a href="#adventages" class="header-link a-reset">
+                                        Преимущества
+                                    </a>
+                                </li>
+                                <li class="header-item blog">
+                                    <a href="#price" class="header-link a-reset">
+                                        Цены
+                                    </a>
+                                </li>
+                                <li class="header-item header__contacts btn-1">
+                                    <a href="#contacts" class="header-link a-reset header__contact_link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="header-item">
+                                    <div class="tumbler" id="dark-mode-tumbler">
+                                        <label class="switch">
+                                            <input type="checkbox" id="dark-mode-checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
                     </nav>
+                    <button class="header__burger_btn" aria-label="Кнопка меню">
+                        <div class="header__burger">
+                          <div class="burger__spans">
+                            <span class="burger__span"></span>
+                            <span class="burger__span"></span>
+                            <span class="burger__span"></span>
+                          </div>
+                        </div>
+                    </button>
                 </div>
-                <div class="tumbler" id="dark-mode-tumbler">
-                    <label class="switch">
-                        <input type="checkbox" id="dark-mode-checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+
             </header>
 
             <div class="main-container container">
                 <h1 class="main-title">
-                    Копицентр <span class="bracket">{</span>Вектор<span class="bracket">}</span>&nbsp;&mdash; для тех,
+                    Центр оперативной печати <span class="bracket">{</span>Вектор<span class="bracket">}</span>&nbsp;&mdash; для тех,
                     кому важно качество
                 </h1>
                 <p class="main-descr">
-                    Расчитайте конечную стоимость прямо на сайте
+                    Расчитайте конечную стоимость по прейскуранту
                 </p>
-                <a href="#" class="to-count a-reset">
+                <a href="#price" class="to-count a-reset">
                     <span>
                         Расчитать
                     </span>
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.292893 13.2929C-0.0976311 13.6834 -0.0976311 14.3166 0.292893 14.7071C0.683418 15.0976 1.31658 15.0976 1.70711 14.7071L0.292893 13.2929ZM15 0.999969C15 0.447684 14.5523 -3.1092e-05 14 -3.13449e-05L5 -3.05441e-05C4.44772 -3.08813e-05 4 0.447685 4 0.999969C4 1.55225 4.44772 1.99997 5 1.99997L13 1.99997L13 9.99997C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 9.99997L15 0.999969ZM1.70711 14.7071L14.7071 1.70708L13.2929 0.292862L0.292893 13.2929L1.70711 14.7071Z"
-                            fill="white" />
+                            fill="white"/>
                     </svg>
                 </a>
             </div>
@@ -91,7 +119,7 @@
                             Ламинирование
                         </li>
                         <li class="services-item item-3">
-                            Широкий&nbsp;формат
+                            Консультания
                         </li>
                         <li class="services-item item-4">
                             Фальцовка
@@ -109,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="adventages_section section">
+        <section class="adventages_section section" id="adventages">
             <h2 class="section-title">
                 Наши преимущества
             </h2>
@@ -119,7 +147,7 @@
                         Качественное оборудование
                     </h3>
                     <p class="card_descr">
-                        Наш Копицентр оборудован современными аппаратами и програмным обеспечением
+                        В нашем Центре оперативной печати только современное оборудование и програмное обеспечение
                     </p>
                 </li>
                 <li class="adventages_item card-2">
@@ -127,7 +155,7 @@
                         Точно в срок
                     </h3>
                     <p class="card_descr">
-                        Успеем выполнить работу точно ко времени. Дня нас Дедлайн - не просто слово
+                        Успеем выполнить работу точно ко времени. Для нас Дедлайн - не просто слово
                     </p>
                 </li>
                 <li class="adventages_item card-3">
@@ -135,7 +163,7 @@
                         Прямая связь
                     </h3>
                     <p class="card_descr">
-                        Задавайте вопросы и оставляйте пожелания к заказу. Обсудите детали с нашим оператором
+                        Задавайте вопросы и оставляйте пожелания к заказу. Обсудите детали по телефону или в WhatsApp
                     </p>
                 </li>
                 <li class="adventages_item card-4">
@@ -151,47 +179,105 @@
                         Удобная оплата
                     </h3>
                     <p class="card_descr">
-                        Платите любым удобным для Вас способом. Мы заранее обо всем позаботились
+                        Оплата любым удобным для Вас способом. Мы заранее обо всем позаботились
                     </p>
                 </li>
             </ul>
         </section>
-        <section class="price_section section">
+        <section class="price_section section" id="price">
             <div class="price__container container">
                 <h2 class="section-title">
                     Стоимость услуг
                 </h2>
                 <div class="price__card">
                     <table class="price__print price__table">
-                        <caption>Копирование / распечатка / сканирование</caption>
-                        <tr class="table_head"><th>Формат</th>  <th>Ч/Б</th> <th>Цветое</th></tr>
-                        <tr><td>A4</td>  <td>5</td>  <td>12-60</td></tr>
-                        <tr><td>A3</td>  <td>10</td>  <td>24-120</td></tr>
+                        <caption>Распечатка</caption>
+                        <tr class="table_head">
+                            <th>Формат</th>
+                            <th>Ч/Б</th>
+                            <th>Цветое</th>
+                        </tr>
+                        <tr>
+                            <td>A4</td>
+                            <td>5&nbsp;<span class="rub">₽</span></td>
+                            <td>12-60&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>10&nbsp;<span class="rub">₽</span></td>
+                            <td>24-120&nbsp;<span class="rub">₽</span></td>
+                        </tr>
                     </table>
                     <table class="price__wide_format_printing price__table">
-                        <caption>Широкоформатная печать</caption>
-                        <tr class="table_head"><th>Формат</th>  <th>Чертежи</th> <th>Заливка 90%</th></tr>
-                        <tr><td>A2</td>  <td>50</td>  <td>250</td></tr>
-                        <tr><td>A1</td>  <td>100</td>  <td>500</td></tr>
+                        <caption>Широкоформатная печать&nbsp;<span class="info_i" id="wide_print_i">i</span></caption>
+                        <tr class="table_head">
+                            <th>Формат</th>
+                            <th>Чертежи</th>
+                            <th>Заливка 90%</th>
+                        </tr>
+                        <tr>
+                            <td>A2</td>
+                            <td>50&nbsp;<span class="rub">₽</span></td>
+                            <td>250&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>A1</td>
+                            <td>100&nbsp;<span class="rub">₽</span></td>
+                            <td>500&nbsp;<span class="rub">₽</span></td>
+                        </tr>
                     </table>
                     <table class="price__folding price__table">
                         <caption>Фальцовка</caption>
-                        <tr class="table_head"><th>Диаметр пружины</th>  <th>Под формат А4</th> <th>Под формат А5</th></tr>
-                        <tr><td>A2-А1</td>  <td>15</td>  <td>20</td></tr>
+                        <tr class="table_head">
+                            <!-- <th>Формат</th> -->
+                            <th>Под формат А4</th>
+                            <th>Под формат А3</th>
+                        </tr>
+                        <tr>
+                            <!-- <td>A2-А1</td> -->
+                            <td>20&nbsp;<span class="rub">₽</span></td>
+                            <td>25&nbsp;<span class="rub">₽</span></td>
+                        </tr>
                     </table>
                     <table class="price__wide_binding price__table">
-                        <caption>Переплет пластиковой пружиной <span>i</span></caption>
-                        <tr class="table_head"><th>Диаметр пружины</th>  <th>А4-А3</th> <th>А2+</th></tr>
-                        <tr><td>10-14</td>  <td>65</td>  <td>130</td></tr>
-                        <tr><td>16-25</td>  <td>85</td>  <td>170</td></tr>
-                        <tr><td>32-38</td>  <td>105</td>  <td>210</td></tr>
-                        <tr><td>45-50</td>  <td>120</td>  <td>240</td></tr>
+                        <caption>Переплет пластиковой пружиной&nbsp;<span class="info_i" id="binding_i">i</span></caption>
+                        <tr class="table_head">
+                            <th>Диаметр пружины</th>
+                            <th>А4-А3</th>
+                            <th>А2+</th>
+                        </tr>
+                        <tr>
+                            <td>10-14 <span class="mm">mm</span></td>
+                            <td>65&nbsp;<span class="rub">₽</span></td>
+                            <td>130&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>16-25 <span class="mm">mm</span></td>
+                            <td>85&nbsp;<span class="rub">₽</span></td>
+                            <td>170&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>32-38 <span class="mm">mm</span></td>
+                            <td>105&nbsp;<span class="rub">₽</span></td>
+                            <td>210&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>45-50 <span class="mm">mm</span></td>
+                            <td>120&nbsp;<span class="rub">₽</span></td>
+                            <td>240&nbsp;<span class="rub">₽</span></td>
+                        </tr>
 
                     </table>
                     <table class="price__other price__table">
                         <caption>Дополнительно</caption>
-                        <tr><td>Переупаковка и добавление страниц</td> <td>100</td></tr>
-                        <tr><td>Запись на электронный носитель</td>  <td>150</td></tr>
+                        <tr>
+                            <td>Переупаковка и добавление страниц</td>
+                            <td>100&nbsp;<span class="rub">₽</span></td>
+                        </tr>
+                        <tr>
+                            <td>Запись на электронный носитель</td>
+                            <td>150&nbsp;<span class="rub">₽</span></td>
+                        </tr>
                     </table>
                     <p class="price__conditions">
                         *За сложные и срочные работы надбавка оговаривается дополнительно, до 50% к общей сумме работ
@@ -199,10 +285,12 @@
                     <p class="price__conditions">
                         *На работы, не вошедшие в прейскурант, цена договорная
                     </p>
+
                 </div>
             </div>
+
         </section>
-        <section class="contacts_section section">
+        <section class="contacts_section section" id="contacts">
             <div class="contacts__container container">
                 <h2 class="section-title">
                     Контакты
@@ -220,7 +308,7 @@
                             </div>
                             <div class="contacts__item">
                                 <h4 class="contacts__item__title">
-                                    Телефон
+                                    Телефон <span class="whatsapp_tip">/ WhatsApp</span>
                                 </h4>
                                 <span class="contacts__item__descr">
                                     <a href="tel:+79500553332" class="contacts__phone">
@@ -236,7 +324,7 @@
                                     <a href="mailto:38vector@mail.ru" class="contacts__email">
                                         38vector@mail.ru
                                     </a>
-    
+
                                 </span>
                             </div>
                             <div class="contacts__item">
@@ -248,7 +336,8 @@
                                 </span>
                             </div>
                         </div>
-                        <a class="contacts__build_a_route" target="_blank" href="https://yandex.ru/maps/63/irkutsk/?ll=104.330070%2C52.268925&mode=routes&rtext=~52.269003%2C104.330059&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjE1NDY4MhI80KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiwg0YPQu9C40YbQsCDQl9Cy0LXRgNC10LLQsCwgOdCRIgoN%2FajQQhV1E1FC&z=17.47">
+                        <a class="contacts__build_a_route" target="_blank"
+                            href="https://yandex.ru/maps/63/irkutsk/?ll=104.330070%2C52.268925&mode=routes&rtext=~52.269003%2C104.330059&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjE1NDY4MhI80KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiwg0YPQu9C40YbQsCDQl9Cy0LXRgNC10LLQsCwgOdCRIgoN%2FajQQhV1E1FC&z=17.47">
                             Построить маршрут
                         </a>
                     </div>
@@ -256,13 +345,73 @@
                     <div class="contacts__map">
                         <div id="map"></div>
                     </div>
-                    
+
 
                 </div>
+                <div class="accordion">
+                    <div class="accordion__list" id="accordion">
+                        <div class="accordion__item ac">
+                            <div class="accordion__top">
+                                <h3>Карточка учета сведений</h3>
+                                <button class="accordion__btn">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z"
+                                            fill="#666666" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="accordion__bottom ac-panel">
+                                <div class="accordion__bottom__content">
+                                    <table class="metainfo">
+                                        <tr><th>Полное наименование</th><td>Общество с ограниченной ответственностью "Вектор"</td></tr>
+                                        <tr><th>Сокращенное наименование</th><td>ООО "Вектор"</td></tr>
+                                        <tr><th>Место нахождения</th><td>РФ, г. Иркутск, ул. Зверева, 9Б, оф. 2</td></tr>
+                                        <tr><th>Почтовый адрес</th><td>Россия, 664007, г. Иркутск, мкр. Крылатый, 24/3, кв. 45</td></tr>
+                                        <tr><th>Телефон</th><td>8-950-055-33-32</td></tr>
+                                        <tr><th>Номер и дата регистрации, регистр. орган</th><td>003749991 от 16.06.2016, Межрайонная инспекция Федеральной налоговой службы No17 по Иркутской области</td></tr>
+                                        <tr><th>ИНН/КПП</th><td>3811435985/381101001</td></tr>
+                                        <tr><th>ОГРН</th><td>1163850075278 от 16.06.2016.</td></tr>
+                                        <tr><th>ОКПО</th><td>09125602</td></tr>
+                                        <tr><th>ОКВЭД</th><td>18.12 71.1</td></tr>
+                                        <tr><th>ОКОПФ</th><td>048002083597</td></tr>
+                                        <tr><th>Ген. директор, осн. полномочий</th><td>Горячева Татьяна Викторовна. Устав, Решение No 1 от 07.06.2016.</td></tr>
+                                        <tr><th>Зам ген. директора, осн. полномочий</th><td>Горячев Михаил Александрович Доверенность No1 от 26 августа 2019 г.</td></tr>
+                                        <tr><th>р/с</th><td>40702810218350014685</td></tr>
+                                        <tr><th>БИК</th><td>042520607</td></tr>
+                                        <tr><th>к/с</th><td>30101810900000000607</td></tr>
+                                        <tr><th>Наименование банка</th><td>Байкальский банк ПАО Сбербанк г.Иркутск</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__logo">
+                        <a href="#" class="main-logo-link">
+                            <img src="img/vector-extralight-gray-logo.svg" alt="footer-logo" class="main-logo-img">
+                        </a>
+                    </div>
+                    <div class="footer__infocol">
+                        <a href="tel:+79500553332" class="footer__tel">
+                            +7 (950) 055-33-32
+                        </a>
+                        <a href="mailto:38vector@mail.ru" class="footer__email">
+                            38vector@mail.ru
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </section>
     </main>
-    <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
